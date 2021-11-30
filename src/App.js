@@ -1,11 +1,11 @@
+import Navbar from './Navbar'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello React! </h1>
-      <p> My Name is sajjan shah </p>
+let App = ()=>{
+  return(
+    <div>
+      <Navbar/> 
     </div>
-  );
+  )
 }
 
 export default App;
