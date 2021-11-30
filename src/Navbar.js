@@ -1,19 +1,15 @@
-import logo from "./images.png"
+import "./Navbar.css"
 
- const Navbar = () => {
+const Navbar = ()=>{
     return(
-        <div>
-            <img src = {logo} alt = "check your internet connection"/>
-            <h1>Fun Facts About React</h1>
-                <ul>
-                    <li>Was Released in 2013</li>
-                    <li>Was Originally Created by Jordan Walke </li>
-                    <li>Has Well Over 100k star on Github</li>
-                    <li>Is Maintained By Facebook</li>
-                </ul>
+        <div className = "nav">
+            <ul>
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
         </div>
     )
 }
 
-
-export default Navbar;
+export default Navbar

@@ -1,0 +1,20 @@
+.nav{
+    position: fixed;
+    top:10px;
+    right: 110px;
+}
+
+.image{
+    width: 140px;
+}
+
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+}
