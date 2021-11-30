@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: whitesmoke;
+    margin: 0;
+    background: url('https://res.cloudinary.com/practicaldev/image/fetch/s--k9QWkgUr--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/i/arasur0jjdbqabgl69xr.png');
+}
+
+.nav-bar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav-bar h2{
+    padding-right: 50px;
+}
+
+.logo{
+    display: flex;
+    padding: 13px;
+}
+
+.logo h1{
+    padding-left: 20px;
+}
+
+.logo img{
+    width: 94px;
+    background-color: black;
+}
+
+.main{
+    height: 90vh;
+    color: white;
+}
+
+.main h1{
+    text-align: center;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+  }
+
+  ul li::marker {
+    color: red;
+    font-size: 1.5em;
+  }
