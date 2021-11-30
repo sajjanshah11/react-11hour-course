@@ -1,11 +1,11 @@
-import Header from './Components/Header.js'
-import Maincontent from './Components/Maincontent.js'
+import Navbar from "./Components/Navbar"
+import Card from "./Components/Card";
 
  const Page = () => {
     return(
         <div>
-            <Header />
-            <Maincontent />
+           <Navbar />
+           <Card />
         </div>
     )
 }

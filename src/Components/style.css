@@ -3,51 +3,60 @@
 }
 
 body{
-    color: whitesmoke;
     margin: 0;
-    background: url('https://res.cloudinary.com/practicaldev/image/fetch/s--k9QWkgUr--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://dev-to-uploads.s3.amazonaws.com/i/arasur0jjdbqabgl69xr.png');
+    font-family: 'Roboto Slab', serif;
+    height: 100vh;
+    width: 100vw;
 }
 
-.nav-bar{
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    color: white;
+.nav-items img{
+    width: 10rem;
+    padding: 1.5rem;
 }
 
-.nav-bar h2{
-    padding-right: 50px;
+.nav-items{
+    height: 12vh;
+    padding: 10px;
+    box-shadow: 7px 2px 15px 3px #888888;
 }
 
-.logo{
-    display: flex;
-    padding: 13px;
+.image-collections img{
+    height: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 2rem;
 }
 
-.logo h1{
-    padding-left: 20px;
+.text {
+    height: 7rem;
+    background-color: antiquewhite;
+    padding-left: 2rem;
+    width: 38rem;
+
 }
 
-.logo img{
-    width: 94px;
-    background-color: black;
+.card-img{
+    height: 25rem;
+    /* border: 1px solid; */
+    width: 16rem;
+    margin: 2rem;
+    position: relative;
 }
 
-.main{
-    height: 90vh;
-    color: white;
+.image-celebrity{
+    width: 100%;
+    height: 72%;
+    border: 2px solid;
+    border-radius: 16px;
+    border: none;
 }
 
-.main h1{
-    text-align: center;
+.hang{
+    position: absolute;
+    top: 0;
+    left: 4px;
+    background-color: yellow;
 }
 
-ul {
-    display: table;
-    margin: 0 auto;
-  }
-
-  ul li::marker {
-    color: red;
-    font-size: 1.5em;
-  }
