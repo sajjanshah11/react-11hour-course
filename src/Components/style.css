@@ -60,3 +60,6 @@ body{
     background-color: yellow;
 }
 
+.card-list{
+    display: flex;
+}

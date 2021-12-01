@@ -1,15 +1,25 @@
 
-const Card = ()=>{
+const Card = (props)=>{
+    console.log(props);
+    let badgeText;
+    if(props.item.openSpots === 0){
+        badgeText = "SOLD OUT";
+    } else if(props.item.location === "Online"){
+        badgeText = "ONLINE";
+    }
+
     return(
         <>  
             <div className = "card-img">
-                 <p className = "hang">SOLD OUT</p>
-                <img className = "image-celebrity" src = "https://editorial01.shutterstock.com/wm-preview-450/10375982av/d443785e/itu-world-triathlon-grand-final-in-lausanne-switzerland-shutterstock-editorial-10375982av.jpg" alt = "Internet Missing">
+                 {badgeText && <p className = "hang">{badgeText}</p>}
+                <img className = "image-celebrity" src = {props.item.coverImg} alt = "Internet Missing">
                 </img>
                 <div className = "detail">
-                    <p>5.0 (6) .USA</p>
-                    <p>Life Lessons with Kate Zaferes</p>
-                    <p><strong>From $136</strong>/ person</p>
+                    <span>{props.item.stats.rating}</span>
+                    <span>({props.item.stats.reviewCount}) . </span>
+                    <span>{props.item.location}</span>
+                    <p>{props.item.title}</p>
+                    <p><strong>From ${props.item.price}</strong>/ person</p>
                 </div>
             </div>
         </>
